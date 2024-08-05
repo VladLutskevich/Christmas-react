@@ -1,0 +1,14 @@
+.snow{
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+    animation: snow 18s linear infinite;   
+    z-index: -1; 
+ }
+
+@keyframes snow{
+    from{background-position: 0 -300px;}
+    20% {background-position: 20% -100px;}
+    40% {background-position: 30% 100px;}
+    to{background-position: 20% 700px;}
+}

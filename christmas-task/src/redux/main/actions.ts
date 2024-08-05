@@ -1,0 +1,47 @@
+import { createAction } from '@reduxjs/toolkit';
+
+import { TreeCard } from '../../common/Types';
+
+export const CHANGE_SHAPE = 'CHANGE_SHAPE';
+export const CHANGE_COLOR = 'CHANGE_COLOR';
+export const CHANGE_SIZE = 'CHANGE_SIZE';
+export const CHANGE_FAVORITE = 'CHANGE_FAVORITE';
+export const CHANGE_AMOUNT = 'CHANGE_AMOUNT';
+export const CHANGE_YEAR = 'CHANGE_YEAR';
+export const CHANGE_OPTION = 'CHANGE_OPTION';
+export const RESET = 'RESET';
+export const RESET_LOCALSTORAGE = 'RESET_LOCALSTORAGE';
+export const CHANGE_SEARCH = 'CHANGE_SEARCH';
+export const CHANGE_SELECT = 'CHANGE_SELECT';
+export const TOGGLE_POPUP = 'TOGGLE_POPUP';
+export const CHANGE_TREE = 'CHANGE_TREE';
+export const CHANGE_BG = 'CHANGE_BG';
+export const TOGGLE_GARLAND = 'TOGGLE_GARLAND';
+export const CHANGE_GARLAND_COLOR = 'CHANGE_GARLAND_COLOR';
+export const TOGGLE_AUDIO = 'TOGGLE_AUDIO';
+export const TOGGLE_SNOW = 'TOGGLE_SNOW';
+export const CHANGE_ITEMS_FOR_DRAG = 'CHANGE_ITEMS_FOR_DRAG';
+export const CHANGE_DRAGGED_ITEMS = 'CHANGE_DRAGGED_ITEMS';
+export const CHANGE_TOYS_ON_TREE = 'CHANGE_TOYS_ON_TREE';
+
+export const shapeFilter = createAction<string, typeof CHANGE_SHAPE>(CHANGE_SHAPE);
+export const colorFilter = createAction<string, typeof CHANGE_COLOR>(CHANGE_COLOR);
+export const sizeFilter = createAction<string, typeof CHANGE_SIZE>(CHANGE_SIZE);
+export const favoriteFilter = createAction<string, typeof CHANGE_FAVORITE>(CHANGE_FAVORITE);
+export const amountFilter = createAction<string[], typeof CHANGE_AMOUNT>(CHANGE_AMOUNT);
+export const yearFilter = createAction<string[], typeof CHANGE_YEAR>(CHANGE_YEAR);
+export const optionsFilter = createAction<string, typeof CHANGE_OPTION>(CHANGE_OPTION);
+export const resetFilter = createAction<string, typeof RESET>(RESET);
+export const resetLocalstorage = createAction<string, typeof RESET_LOCALSTORAGE>(RESET_LOCALSTORAGE);
+export const searchFilter = createAction<string, typeof CHANGE_SEARCH>(CHANGE_SEARCH);
+export const selectedFilter = createAction<string, typeof CHANGE_SELECT>(CHANGE_SELECT);
+export const overlayToggle = createAction<string, typeof TOGGLE_POPUP>(TOGGLE_POPUP);
+export const changeTree = createAction<string, typeof CHANGE_TREE>(CHANGE_TREE);
+export const changeBg = createAction<string, typeof CHANGE_BG>(CHANGE_BG);
+export const toggleGarland = createAction<string, typeof TOGGLE_GARLAND>(TOGGLE_GARLAND);
+export const changeGarlandColor = createAction<string, typeof CHANGE_GARLAND_COLOR>(CHANGE_GARLAND_COLOR);
+export const toggleAudio = createAction<string, typeof TOGGLE_AUDIO>(TOGGLE_AUDIO);
+export const toggleSnow = createAction<string, typeof TOGGLE_SNOW>(TOGGLE_SNOW);
+export const changeItemsForDrag = createAction<number[], typeof CHANGE_ITEMS_FOR_DRAG>(CHANGE_ITEMS_FOR_DRAG);
+export const changeDraggedItems = createAction<number[], typeof CHANGE_DRAGGED_ITEMS>(CHANGE_DRAGGED_ITEMS);
+export const changeToysOnTree = createAction<TreeCard[], typeof CHANGE_TOYS_ON_TREE>(CHANGE_TOYS_ON_TREE);
